@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Poppins';
+    background-color: rgb(231 229 228);
+    display: flex;
+    flex-direction: column;
+}
+  
+header {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #1b1b1b;
+    height: 70px;
+    width: 100%;
+    color: #fff;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.459);
+    z-index: 1;
+}
+  
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    cursor: pointer;
+}
+  
+#logo img {
+    width: 100%;
+}
+
+#formulario-compra {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    flex-grow: 1;
+    justify-content: center;
+    transition: .5s;
+}
+
+#formulario-compra section {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+@media (min-width: 450px) {
+    #formulario-compra section {
+        width: 380px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+}
+
+.form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.form input {
+    padding: 0.5rem;   
+    border-radius: 5px;
+    border: 1px solid rgb(154, 157, 161);
+}
+
+.cep-endereco, .numero-complemento {
+    display: flex;
+}
+
+.cep-endereco .form, .numero-complemento .form {
+    width: 50%;
+}
+
+#produtos-checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#container-produtos-checkout {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    overflow-y: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#container-produtos-checkout::-webkit-scrollbar {
+    width: 11px;
+    background-color: #fff;
+}
+  
+#container-produtos-checkout::-webkit-scrollbar-thumb {
+    background-color: #c9c9c9;
+    border-radius: 20px;
+}
+
+#container-produtos-checkout article {
+    position: relative;
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    color: #0c0c0c;
+    font-size: 0.875rem;
+}
+
+article img {
+    width: 70px;
+    border-radius: 5px;
+}
+  
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+  
+.quantidade {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+}
+  
+.quantidade p {
+    margin-left: 5px;
+}
+
+#celula-checkout {
+    padding: 10px;
+}
+
+#celula-checkout span {
+    color: rgb(0, 202, 0);
+}
+
+#celula-checkout button {
+    border: none;
+    background-color: #000000d3;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    width: 100%;
+}
+ 
+#celula-checkout button:hover {
+    background-color: #0c0c0c;  
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0c0c0c;
+    font-weight: bold;
+    cursor: pointer;  
+}
+  
+footer a:hover {
+    text-decoration: underline;
+}

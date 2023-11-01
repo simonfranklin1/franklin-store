@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <link rel="stylesheet" href="/src/css/checkout.css">
+    <link rel="shortcut icon" href="/public/simon-logo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+    <script src="../js/checkout.js" type="module" defer></script>
+    <title>Franklin Store</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="/assets/img/logo-f-store.png" alt="logo">
+      </div>
+    </header>
+    <form id="formulario-compra">
+        <section id="dados-usuario">
+            <p class="titulo">Seus Dados</p>  
+            <div class="form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Jonas Paiva" required>
+            </div> 
+            <div class="form">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="exemploemail@gmail.com" required>
+            </div>
+            <div class="form">
+                <label for="telefone">Telefone de Contato</label>
+                <input type="tel" id="telefone" placeholder="(11) 4002-8922" required>
+            </div> 
+        </section>
+        <section id="dados-pagamento">
+            <p class="titulo">Pagamento e Entrega</p>
+            <div class="form">
+                <label for="numero-cartao">Pagamento do Cartão</label>
+                <input type="text" id="numero-cartao" placeholder="1111 1234 5678 9012" required>
+            </div>
+            <div class="cep-endereco">
+                <div class="form">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="222" required >
+                </div>
+                <div class="form">
+                    <label for="data-expiracao">Data de Validade</label>
+                    <input type="text" id="data-expiracao" placeholder="10/24" required >
+                </div>
+            </div>
+            <div class="form">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" placeholder="11122-333" required>
+            </div>
+            <div class="form">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" placeholder="Rua que sobe" required>
+            </div>
+            <div class="numero-complemento">
+                <div class="form">
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero" placeholder="525" required >
+                </div>
+                <div class="form">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" id="complemento" placeholder="200" required >
+                </div>
+            </div>
+        </section>
+        <section id="produtos-checkout">
+         <div id="container-produtos-checkout"></div> 
+         <div id="celula-checkout">
+            <p id="preco-total">Total: <span>$200</span></p>
+            <button type="submit" >Finalizar Compra</button>
+         </div>  
+        </section>
+    </form>
+    <footer>Code by <a href="https://github.com/simonfranklin1" target="_blank">Simon Franklin</a></footer>
+  </body>
+</html>
