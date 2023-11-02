@@ -1,6 +1,6 @@
-import { funcionalidadesCarrinho, renderizarCarrinho } from "./src/js/carrinho";
-import { renderizarCatalogo } from "./src/js/catalogo";
-import { funcionalidadesBusca, funcionalidadesFiltro } from "./src/js/filtroEBusca";
+import { funcionalidadesCarrinho, renderizarCarrinho } from "./franklin-store/src/js/carrinho";
+import { renderizarCatalogo } from "./franklin-store/src/js/catalogo";
+import { funcionalidadesBusca, funcionalidadesFiltro } from "./franklin-store/src/js/filtroEBusca";
 
 
 renderizarCatalogo();
